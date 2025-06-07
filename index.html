@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 🔥 Normas BEM y camelCase 🔥</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     
+  <header class="header">
+    <h1>Guía de Nomenclatura: BEM y CamelCase</h1>
+    <p>Aprende las mejores prácticas para nombrar clases y variables en desarrollo web</p>
+  </header>
+
+  <main class="main-content">
+    <section class="section bem">
+      <h2> ¿Qué es BEM?</h2>
+      <p><strong>BEM</strong> es una metodología  de nomenclatura popular para clases en <strong>HTML y 
+        CSS.</strong>  Desarrollado por el equipo de Yandex, El objetivo de BEM es dar mucha 
+        más organización, transparencia y claridad en tu estructura HTML y CSS. 
+        BEM te dice cómo se relacionan las clases entre sí, lo que es particularmente 
+        útil en secciones complejas del documento. Es allí donde se divide en  (Bloque, 
+        Elementos y Modificadores) entra en escena y se convierte en un aliado para 
+        todo Desarrollador Web. </p>
+
+        <h3>Bloques, elementos y modificadores:</h3>
+
+      <ul>
+        <li><strong>Bloque:</strong> Es una sección independiente que tiene significado propio por 
+         sí solo. Contiene todos los nodos HTML de una estructura a la que te estés 
+        refiriendo. Se define con nombre descriptivo en minúsculas y sin espacio. 
+        Cuando la clase se refiera solo al bloque, será <code><mark>bloque</mark></code></li>
+        <li><strong>Elemento:</strong> Son porciones más pequeñas internas a un bloque. 
+        Se usa para ir dividiendo el bloque en segmentos más pequeños. Utiliza el 
+        nombre del bloque seguido por el elemento. Cuando se refiera a un elemento 
+        dentro de un bloque, sera: <code><mark>bloque_elemento</mark></code></li>
+        <li><strong>Modificador:</strong>  sirve para modificar algunas propiedades de un 
+        bloque o elemento. Además representa una variante o estado diferente de un 
+        bloque o elemento. Se separa del bloque o elemento por dos guiones bajos. 
+        Se agrega el bloque o elemento con el que está asociado. 
+        sera: <code><mark>bloque__elemento_modificdor</mark></code></li>
+      </ul>
+
+
+          <h3>Ejemplos:</h3>
+          <p>Mira, esto sería un ejemplo de código HTML con la estructura BEM:</p>
+
+    </section>
+
+    <section class="section camelcase">
+      <h2>¿Qué es CamelCase?</h2>
+      <p><strong>CamelCase</strong> es un estilo de escritura donde cada palabra comienza con mayúscula (excepto la primera, en lowerCamelCase), y no se usan espacios ni guiones.</p>
+      <ul>
+        <li><strong>lowerCamelCase:</strong> usado en variables y funciones en JavaScript. Ej: <code>nombreUsuario</code></li>
+        <li><strong>UpperCamelCase (PascalCase):</strong> usado en nombres de clases o componentes. Ej: <code>MiComponente</code></li>
+      </ul>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 - Guía de Nomenclaturas | Desarrollado por ChatGPT</p>
+  </footer>
 </body>
 </html>
