@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,22 @@
 </head>
 <body>
     
-  
+   <!-- Encabezado -->
+
+   <div id="Franja">Mini Proyecto Html5 y CSS </div>
+
+
+       <div class="contenedor-audio">
+       <audio controls>
+          <source src="Musica/Linkin Park - The Emptiness Machine.mp3" type="audio/mp3">
+           Tu navegador no soporta el elemento de audio.
+       </audio>
+   </div>
 
 <main class="main">
   
 <header class="header">
-    <h1>Guía de Nomenclatura <br> BEM y CamelCase</h1>
+    <h1>Guía de Nomenclatura <br>  BEM y CamelCase</style></h1>
     <p>BEM significa Block Element Modifier. Es una convención para nombrar clases CSS que ayuda a organizar y mantener el código fácilmente escalable.
 
  </p>
@@ -23,25 +33,35 @@
     <section class="section">
       <h2>¿Qué es BEM?</h2>
       <p>
-       BEM es una metodología  de nomenclatura popular para clases en HTML y CSS. Desarrollado por el equipo de Yandex, 
+       BEM es una metodología  de nomenclatura popular para <mark>clases en HTML y CSS. Desarrollado por el equipo de Yandex,</mark>
        El objetivo de BEM es dar mucha más organización, transparencia y claridad en tu estructura HTML y CSS. BEM te dice 
        cómo se relacionan las clases entre sí, lo que es particularmente útil en secciones complejas del documento. Es allí donde se divide en  
        (Bloque, Elementos y Modificadores) entra en escena y se convierte en un aliado para todo Desarrollador Web.
       </p>
+      
+      <!-- VIDEO LOCAL -->
 
+      <section class="section video">
+         <video width="100%" controls poster="imagenes/poster.jpg">
+        <source src="video/BEM-VIDEO.mp4" type="video/mp4">
+          Tu navegador no es compatible con el vídeo de HTML5.
+          </video>
+       </section>
+
+
+     
+       <!-- Lista ordenada -->
         <h3> &#x2022; Ventajas de usar BEM</h3>
       <ol>
         <li><strong>Mayor claridad y legibilidad del código </strong> Los nombres de clases indican explícitamente la función y la estructura del componente.</li>
         <li><strong>Reutilización de componente</strong> Los bloques se pueden reutilizar en diferentes contextos sin conflictos con otros estilos.</li>
         <li><strong>Evita colisiones de nombres </strong> Gracias a su estructura jerárquica, se reducen los conflictos entre clases CSS.</li>
         <li><strong>Facilita el mantenimiento del código</strong> Es más fácil localizar y actualizar estilos relacionados con un componente específico.</li>
-        <li><strong>Compatible con metodologías modernas (Atomic Design, CSS-in-JS, etc.)</strong>BEM se puede combinar con herramientas y metodologías modernas sin problema.</li>
-        <li><strong>Facilita el testing automatizado</strong>Los selectores CSS son predecibles y únicos, lo que los hace ideales para pruebas automatizadas.</li>
+        <li><strong>Compatible con metodologías modernas (Atomic Design, CSS-in-JS, etc.)</strong> BEM se puede combinar con herramientas y metodologías modernas sin problema.</li>
+        <li><strong>Facilita el testing automatizado</strong> Los selectores CSS son predecibles y únicos, lo que los hace ideales para pruebas automatizadas.</li>
   
       </ol>
 
-    
- 
     <!-- Imagenes -->
      <h3> &#x2022; Ejemplos</h3>
       <section class="image-galery">
@@ -56,31 +76,63 @@
       <h3 class="image-title">Aquí se observa como queda en CSS dicha nomenclatura</h3>
      </div>
   </section>
+
+      <!-- Lista desordenada -->
+     <h3 class="section__subtitle">  &#x2022; Ejemplos de código usando BEM</h3>
+         <ul class="section__list section__list--code">
+        <li><code>.menu</code></li>
+        <li><code>.menu__item</code></li>
+        <li><code>.menu__item--active</code></li>
+        <li><code>.form__input--error</code></li>
+      </ul>
+
     </section>
 
     <!-- camelCase -->
     <section class="section section--camelCase">
       <h2>¿Qué es camelCase?</h2>
-      <p>
-       CamelCase es una forma de separar las palabras de una frase, escribiendo la primera letra de cada palabra en mayúscula y sin espacios. Se usa comúnmente en <strong>URL/web</strong>, programación y convenciones de nomenclatura informática. Recibe su nombre de los camellos, ya que las mayúsculas se asemejan a las jorobas de su lomo.
-      </p>
+      <p>El estilo Camelcase es un estilo de mayúsculas y minúsculas donde las palabras se unen sin espacios, y cada palabra nueva empieza con mayúscula, 
+        excepto la primera. El nombre "camelCase" proviene de la apariencia <mark>abombada de las mayúsculas</mark>. Camelcase se usa comúnmente en <mark>JavaScript, Java 
+        y C# </mark>para nombres de variables y funciones.</p>
 
-      <h3>¿Dónde se usa camelCase?</h3> 
-      <P>CamelCase, una convención de nomenclatura, se utiliza principalmente en programación, especialmente para nombrar variables, funciones y clases, donde se unen palabras sin espacios, pero la primera letra de cada palabra (excepto la primera) se escribe en mayúscula. Esta forma de escribir permite que las palabras sean fáciles de leer y distingue las diferentes partes de un nombre complejo. </P>
+
+           <!-- VIDEO RED -->
+<section class="section video">
+     
+       <iframe width="100%" height="450" src="https://www.youtube.com/embed/tykGHN3hVFM?si=2d_kIVmCQM_591Ux" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+</section>
+      <h3>¿Cómo funciona?</h3> 
+      <P>Esto se basa en la idea de concatenar palabras para formar identificadores significativos. Al unir varias palabras en un
+        solo identificador, se facilita la lectura y comprensión del código. Veamos un ejemplo para que lo entiendas con facilidad: </P>
+     <section class="image-galery">
+        
+        <div class="image-codigo">
+        <img src="imagenes/ejemplo3.jpg" alt="Descripción de la imagen 3">
+      </div>
+
+  </section>
+    <h3>Situaciones donde se usa camelCase</h3>
       <ol>
-        <li><strong>En nombres de variables en JavaScript.</strong></li>
-        <li><strong>En nombres de funciones,</strong></li>
-        <li><strong>En propiedades de objetos.</strong></li>
+        <li><strong>Nombres de variables y funciones en JavaScript</strong></li>
+        <li><strong>Nombres de elementos o modificadores en BEM </strong></li>
+        <li><strong>Propiedades de objetos en JavaScript</strong></li>
+        <li><strong>Parámetros en funciones</strong></li>
+        <li><strong>Archivos JS exportados como funciones o constantes</strong></li>
       </ol>
 
-      <h3>Ejemplos de camelCase</h3>
-      <ul>
-        <li><code>miVariable</code></li>
-        <li><code>calcularSuma</code></li>
-        <li><code>usuario.nombreCompleto</code></li>
+        <h3>Ejemplos de código usando camelCase</h3>
+      <ul class="code">
+        <li><code>let userName = "Ana";</code></li>
+        <li><code>function obtenerEdadUsuario() {}</code></li>
+        <li><code>const nombreCompleto = "Carlos Pérez";</code></li>
+        <li><code>usuario.obtenerDatos();</code></li>
       </ul>
     </section>
 
+   
     <!-- Comparación -->
     <section class="section section--comparacion">
       <h2>Comparación entre normas BEM y camelCase</h2>
@@ -94,33 +146,52 @@
         </thead>
         <tbody>
           <tr>
-            <td>Ámbitos</td>
-            <td>CSS / HTML</td>
-            <td>JavaScript</td>
+            <td>se usa en</td>
+            <td>Nombres de clases CSS</td>
+            <td>Nombres de variables, funciones, propiedades (JS, CSS-in-JS)/td>
           </tr>
           <tr>
-            <td>Usos</td>
-            <td>Clases para estilos</td>
-            <td>Variables y funciones</td>
+            <td>Propósito</td>
+            <td>Organización semántica y jerárquica de componentes en CSS</td>
+            <td>Nombrar identificadores compuestos de forma legible</td>
           </tr>
           <tr>
-            <td>Legibilidad</td>
-            <td>Alta con estructura clara</td>
-            <td>Alta en programación</td>
+            <td>Sintaxis básica</td>
+            <td>bloque__elemento--modificador</td>
+            <td>nombreCompuesto</td>
+          </tr>
+
+            <tr>
+            <td>Ejemplo</td>
+            <td>boton__icono--grande</td>
+            <td>tamañoImagen</td>
           </tr>
         </tbody>
       </table>
-      <p>
-        Usa BEM para estructurar estilos en CSS y camelCase para variables y funciones en JavaScript.
+      <p style="text-align: center;">
+        BEM para estructurar estilos en CSS y camelCase para variables y funciones en JavaScript.
       </p>
     </section>
 
-   
-  </main>
+    
+    <!-- Enlaces a otra página -->
+
+<div id="enlaces">
+    <a href="https://animaticss.com/articulo/que-es-bem-css/" class="btn" target="_blank">
+  Viisita BEM
+</a>
+   <a href="https://openai.com" class="btn" target="_blank">
+  Visita CamelCase
+</a>
+</div>
+
+</main>
 
 
   <footer class="footer">
-    <p>&copy; 2025 - Guía de Nomenclaturas | Desarrollado por ChatGPT</p>
+    <p>&copy;Instituto Tecnológico Público Argentina | curso: Fundamentos de Interfaces Web Interactivas</p>
+     <p><strong>Elaborado por:</strong> Sandro Choque Cardenas</p>
+
   </footer>
 </body>
 </html>
