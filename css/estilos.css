@@ -75,8 +75,7 @@ color:#4e54c8;
   gap: 2rem;
   padding: 1rem 1rem;
   flex-wrap: wrap; /* para que sea responsive */
- border: 4px solid #007bff;
-   border-radius: 10px;
+
 }
 
 /* Cada imagen con su título */
